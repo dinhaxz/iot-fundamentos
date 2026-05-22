@@ -1,81 +1,104 @@
-Fundamentos de Internet das Coisas (IoT)
-📌 Introdução
+# Fundamentos de Internet das Coisas (IoT)
+## 📌 Introdução
+
 
 A Internet das Coisas (IoT — Internet of Things) representa a conexão de dispositivos físicos à internet, permitindo coleta, troca e análise de dados em tempo real. Sensores, atuadores, microcontroladores e sistemas inteligentes trabalham juntos para automatizar processos, monitorar ambientes e apoiar decisões.
 
 Exemplos de aplicações IoT incluem:
 
+
+
 Casas inteligentes
+
 Agricultura de precisão
+
 Cidades inteligentes
+
 Indústria 4.0
+
 Saúde conectada
+
 Monitoramento ambiental
+
 🏗️ Arquitetura em Três Camadas
 
 A arquitetura clássica de sistemas IoT é dividida em três camadas principais:
 
-1️⃣ Camada de Percepção (Hardware)
+## 1️⃣ Camada de Percepção (Hardware)
 
 A camada de percepção é responsável por interagir diretamente com o mundo físico.
 
 Ela coleta informações do ambiente através de sensores e executa ações utilizando atuadores.
 
-🔹 Componentes principais
+## 🔹 Componentes principais
 Sensores de temperatura
 Sensores de umidade
 Sensores de presença
 Câmeras
 GPS
 Atuadores (motores, relés, LEDs etc.)
-🔹 Funções
+
+
+## 🔹 Funções
 Captura de dados físicos
 Conversão de sinais analógicos em digitais
 Execução de comandos físicos
-🔹 Exemplo prático
+
+
+## 🔹 Exemplo prático
 
 Um sensor de temperatura mede o ambiente e envia os dados para um microcontrolador como um ESP32 ou Arduino.
 
-2️⃣ Camada de Rede (Conectividade)
+## 2️⃣ Camada de Rede (Conectividade)
 
 A camada de rede é responsável pela transmissão dos dados entre dispositivos, servidores e aplicações.
 
 Ela garante que as informações coletadas pelos sensores cheguem ao destino correto.
 
-🔹 Tecnologias e redes utilizadas
+## 🔹 Tecnologias e redes utilizadas
 Wi-Fi
 Bluetooth Low Energy (BLE)
 Zigbee
 LoRaWAN
 4G/5G
 Ethernet
-🔹 Funções
+
+
+## 🔹 Funções
 Comunicação entre dispositivos
 Transporte de dados
 Segurança na transmissão
 Integração com serviços em nuvem
-🔹 Protocolos comuns
+
+
+## 🔹 Protocolos comuns
 MQTT
 HTTP/REST
 CoAP
-3️⃣ Camada de Aplicação
+
+
+## 3️⃣ Camada de Aplicação
 
 A camada de aplicação é onde os dados são processados, armazenados e apresentados ao usuário final.
 
 Ela transforma dados brutos em informações úteis.
 
-🔹 Funções
+## 🔹 Funções
 Visualização de dashboards
 Armazenamento em banco de dados
 Processamento em nuvem
 Inteligência artificial e análise de dados
 Automação
-🔹 Exemplos de aplicações
+
+
+## 🔹 Exemplos de aplicações
 Aplicativos móveis
 Sistemas web
 Plataformas em nuvem
 Sistemas de monitoramento industrial
-🔹 Exemplo prático
+
+
+## 🔹 Exemplo prático
 
 Um dashboard web exibe gráficos de temperatura em tempo real e envia alertas caso o valor ultrapasse limites definidos.
 
@@ -88,11 +111,13 @@ Protocolo	Modelo	Consumo	Velocidade	Uso Principal	Vantagens	Desvantagens
 MQTT	Publish/Subscribe	Baixo	Alta	Sensores e telemetria	Leve, eficiente e ideal para IoT	Necessita broker
 HTTP (REST)	Cliente-Servidor	Médio/Alto	Média	APIs web e integração	Simples e amplamente utilizado	Mais pesado para dispositivos limitados
 CoAP	Cliente-Servidor	Muito baixo	Alta	Dispositivos restritos	Baixo consumo e eficiente	Menor suporte que HTTP
-🔹 MQTT
+
+
+## 🔹 MQTT
 
 O MQTT (Message Queuing Telemetry Transport) é um protocolo leve baseado no modelo Publish/Subscribe.
 
-Características
+## Características
 Baixo consumo de banda
 Ideal para dispositivos limitados
 Comunicação assíncrona
@@ -101,7 +126,9 @@ Funcionamento
 Publisher envia mensagens
 Broker gerencia comunicação
 Subscriber recebe mensagens
-🔹 HTTP (REST)
+
+
+## 🔹 HTTP (REST)
 
 O HTTP é um dos protocolos mais utilizados na internet e também aparece em aplicações IoT.
 
@@ -113,11 +140,13 @@ Limitações em IoT
 Alto overhead
 Maior consumo energético
 Menos eficiente em redes instáveis
-🔹 CoAP
+
+
+## 🔹 CoAP
 
 O CoAP (Constrained Application Protocol) foi criado especificamente para dispositivos restritos.
 
-Características
+## Características
 Baseado em UDP
 Muito leve
 Baixo consumo energético
@@ -125,14 +154,16 @@ Ideal para sensores simples
 Vantagens
 Excelente para redes com baixa largura de banda
 Menor latência
+
 🧠 Digital Twin
-📌 O que é Digital Twin?
+
+## 📌 O que é Digital Twin?
 
 Digital Twin (Gêmeo Digital) é uma representação virtual de um objeto, sistema ou processo físico.
 
 Ele recebe dados em tempo real do dispositivo físico através de sensores IoT e replica digitalmente seu comportamento.
 
-🔹 Como funciona
+## 🔹 Como funciona
 Sensores coletam dados do objeto físico
 Os dados são enviados para a nuvem
 O modelo digital é atualizado em tempo real
@@ -154,7 +185,7 @@ Monitoramento de trânsito, iluminação e consumo energético.
 
 Acompanhamento remoto de equipamentos médicos.
 
-🔹 Benefícios
+## 🔹 Benefícios
 Manutenção preditiva
 Redução de custos
 Melhor tomada de decisão
@@ -167,8 +198,13 @@ A Internet das Coisas conecta o mundo físico ao digital através de sensores, r
 Com a arquitetura em três camadas, protocolos de comunicação eficientes e tecnologias como Digital Twin, a IoT se torna fundamental para automação, análise de dados e transformação digital em diversos setores.
 
 📚 Referências
+
 MQTT.org
+
 IETF CoAP Documentation
+
 IBM Cloud IoT
+
 AWS IoT Core
+
 Cisco IoT Reference Model
