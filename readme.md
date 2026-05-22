@@ -208,3 +208,110 @@ IBM Cloud IoT
 AWS IoT Core
 
 Cisco IoT Reference Model
+---
+
+# Sistema de Monitoramento de Nível de Água
+
+## 📌 Objetivo
+Projetar um sistema IoT capaz de monitorar o nível de água utilizando sensor ultrassônico, microcontrolador ESP32 e comunicação em nuvem.
+
+---
+
+# 🏗️ Arquitetura do Sistema
+
+## Fluxo de Dados
+
+```text
+[Sensor Ultrassônico HC-SR04]
+        │
+        │ Sinal Digital (Trigger/Echo)
+        ▼
+[ESP32]
+        │
+        │ Wi-Fi + MQTT/HTTP
+        ▼
+[Roteador Wi-Fi]
+        │
+        │ Internet (TCP/IP)
+        ▼
+[Servidor/Nuvem]
+(Banco de Dados + Dashboard + Alertas)
+```
+
+---
+
+# 🔍 Descrição da Arquitetura
+
+## 1. Sensor Ultrassônico HC-SR04
+Responsável por medir a distância entre o sensor e a superfície da água utilizando ondas ultrassônicas.
+
+### Comunicação
+- Sinal Digital
+- Pinos Trigger e Echo
+
+---
+
+## 2. ESP32
+Microcontrolador responsável por:
+- Ler os dados do sensor
+- Processar as medições
+- Enviar informações para a nuvem
+
+### Comunicação
+- Wi-Fi
+- MQTT ou HTTP
+
+---
+
+## 3. Roteador Wi-Fi
+Responsável por conectar o ESP32 à internet.
+
+### Protocolos
+- IEEE 802.11 b/g/n
+- TCP/IP
+
+---
+
+## 4. Servidor/Nuvem
+Responsável por:
+- Receber os dados do ESP32
+- Armazenar informações
+- Exibir dashboard em tempo real
+- Gerar alertas
+
+### Tecnologias possíveis
+- AWS
+- Firebase
+- ThingsBoard
+- Google Cloud
+
+---
+
+# 📡 Tecnologias Utilizadas
+
+| Camada | Tecnologia |
+|---|---|
+| Sensor | HC-SR04 |
+| Microcontrolador | ESP32 |
+| Comunicação | Wi-Fi |
+| Protocolo IoT | MQTT |
+| Backend | Node.js / Python |
+| Banco de Dados | Firebase / MySQL |
+| Dashboard | Grafana / ThingsBoard |
+
+---
+
+# 📊 Exemplo de Expansão
+
+```text
+Servidor → Banco de Dados → Dashboard → Usuário
+```
+
+---
+
+# 🚀 Possíveis Melhorias
+- Alertas por Telegram ou Email
+- Dashboard Mobile
+- Criptografia TLS
+- Armazenamento em nuvem
+- Histórico de medições
